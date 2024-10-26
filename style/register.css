@@ -1,0 +1,105 @@
+.signup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--light-bg);
+}
+
+.signup .image {
+    flex: 1 1 41rem;
+}
+
+.signup .image img {
+    width: 100%;
+}
+
+.signup .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.signup .content h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.signup .content form {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 2rem;
+    max-width: 50rem;
+    margin-right: 0rem;
+}
+
+.signup .content form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: .8rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+
+.signup .content form span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.signup .content form .form-group .form-footer .signup-btn {
+    margin-top: 1rem;
+    background: var(--black);
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    position: relative;
+    cursor: pointer;
+    left: 3.4rem;
+}
+
+.signup .content form .form-group .form-footer .signup-btn:hover {
+    background: var(--main-color);
+}
+
+.signup .content form .form-group .form-footer p {
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+}
+
+.signup .content form .form-group .form-footer a {
+    font-weight: 600;
+    margin-left: .5rem;
+    color: var(--main-color);
+
+}
+
+.signup .content form .form-group .form-footer a:hover {
+    color: #0000EE;
+    background-color: transparent;
+    text-decoration: underline;
+
+}
+
+.row {
+    display: flex;
+}
+
+.form-group {
+    margin: 10px 5px;
+    flex: 1;
+}
+
+.signup .content form .row .form-group .error{
+    font-size: 1.5rem;
+    color: red;
+    
+   
+}

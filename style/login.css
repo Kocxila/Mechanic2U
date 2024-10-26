@@ -1,0 +1,99 @@
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--light-bg);
+}
+
+.login .image {
+    flex: 1 1 41rem;
+}
+
+.login .image img {
+    width: 100%;
+}
+
+.login .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background-color: var(--light-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.login .content h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.login .content form {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 2rem;
+    max-width: 50rem;
+    margin-right: 0rem;
+
+
+}
+
+
+.login .content form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 1.5rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.login .content form span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.login .content form .login-btn {
+    margin-top: 1rem;
+    background: var(--black);
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.login .content form .login-btn:hover {
+    background: var(--main-color);
+}
+
+.login .content form p {
+    font-size: 1.4rem;
+    padding: 1.7rem 0;
+}
+
+.login .content form a {
+    font-weight: 600;
+    margin-left: .5rem;
+    color: var(--main-color);
+
+}
+
+.login .content form a:hover {
+    color: #0000EE;
+    background-color: transparent;
+    text-decoration: underline;
+
+}
+.login .content form .error{
+    font-size: 1.5rem;
+    color: red;
+    
+   
+}
