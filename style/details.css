@@ -1,0 +1,82 @@
+ 
+
+body{
+    background-image: url("../images/back_admin.PNG"); 
+    backdrop-filter: blur(5px);
+    background-size:auto;
+    background-position:initial;
+    background-repeat: no-repeat;
+}
+
+.close{
+    width: 15%;
+    margin-left: 85%;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+ 
+table{
+    width: 50%;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    background: var(--light-bg);
+}
+  
+table th{
+    border: 1px solid var(--border);
+    border-bottom: 3px solid var(--main-color);
+    margin-bottom: 35px;
+}
+
+table tr,
+table td{
+    background: var(--light-bg);
+    padding: 0.5rem;
+}
+  
+table h3{
+    text-transform: uppercase;
+    color:var(--black);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+  
+table .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin:1rem 0;
+    background: var(--white);
+    text-transform: none;
+}
+  
+#map {
+    height: 250px;
+    width: 100%;
+    margin-left: 3%;
+}
+  
+  @media (max-width:768px){
+  
+     .display{
+        overflow-y:scroll;
+     }
+  
+     .display .display-table{
+        width: 80rem;
+     }
+  
+  }
+  
+  @media (max-width:450px){
+  
+     html{
+        font-size: 50%;
+     }
+  
+  }

@@ -1,0 +1,189 @@
+.heading {
+    background: url("../images/apropos.png");
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 7rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+
+
+
+.about .image img {
+    margin-top: 20px;
+    height: 100%;
+    width:100%;
+}
+
+
+
+.about .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 30px;
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about .content p,
+.about .content .list{
+    
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+    padding: 0.55rem 3rem;
+    text-align: justify;
+    text-indent: 3rem;
+    
+}
+
+.about .content .list{
+    list-style: disc;
+    padding-left: 70px;
+       
+}
+
+
+.about .content .icons-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.about .content .icons-container .icons {
+    background: var(--light-bg);
+    padding: 2rem;
+    flex: 1 1 16rem;
+    height: 150px;
+    text-align: center;
+}
+
+.about .content .icons-container .icons i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.about .content .icons-container .icons span {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .about .content p,
+    .about .content .list {
+       font-size: 1.4rem;
+       padding: 0.55rem 1rem;
+       text-align: justify;
+    }
+    .about .content .list{
+        
+        padding-left: 30px;
+           
+    }
+    .about .content .icons-container {
+        margin-top: 1rem;
+        justify-content: center;
+     }
+   
+    .about .content .icons-container .icons {
+       flex: 1 1 auto;
+       height: auto;
+       padding: 1rem;
+    }
+       
+    .heading h1 {
+        font-size: 4rem;
+        
+    }
+   
+}
+
+/*slider*/
+
+.reviews {
+    background: var(--light-bg);
+}
+
+
+
+.reviews .slide {
+    padding: 2rem;
+    border: var(--border);
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    user-select: none;
+    margin-bottom: 4rem;
+    display: inline;
+    height: 600px;
+    
+}
+
+.reviews .slide .stars {
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+  padding-bottom: 15px;
+}
+
+
+.reviews .slide .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.reviews .slide p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.reviews .slide h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .slide span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display: block;
+}
+
+.reviews .slide img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.reviews h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--black);
+}
+
+.reviews .swiper-pagination {
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.reviews .swiper-pagination-bullet-active {
+    background-color: var(--main-color) !important;
+}

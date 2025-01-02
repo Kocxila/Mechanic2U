@@ -1,0 +1,234 @@
+.heading {
+    background: url("../images/background.jpg");
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 7rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.devis {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.devis-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    color: var(--black);
+}
+
+.devis .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.devis .content form {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 2rem;
+    max-width: 100%;
+    margin-right: 0rem;
+    position: relative;
+}
+
+.devis .content form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: .8rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.devis .content form #coordinates {
+    display: none;
+}
+
+.devis .content form span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.devis .content form .form-group input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.devis .content form .form-group input:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+.devis .content form .form-group input:focus::placeholder {
+    color: var(--light-white);
+}
+
+.devis .content form .form-group select {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.devis .content form .form-group select:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+.devis .content form .row .form-group #txt1 {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.devis .content form .row .form-group #txt2 {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.devis .content form .row .form-group .error {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.devis .content form .btn {
+    margin-top: 2rem;
+}
+
+.devis .content .form-group #btn1,
+.devis .content .form-group #btn2d {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+    background-color: var(--light-white);
+    margin-bottom: 2rem;
+}
+
+.devis .content .form-group #btn1:hover {
+    background: var(--black);
+}
+
+.devis .content .form-group #btn2 {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+    background-color: var(--light-white);
+    margin-bottom: 2rem;
+}
+
+.devis .content .form-group #btn2:hover {
+    background: var(--black);
+}
+
+.devis .content form .form-footer .devis-btn {
+    margin-top: 1rem;
+    background: var(--black);
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.devis .content form .form-footer .devis-btn:hover {
+    background: var(--main-color);
+}
+
+.devis .content form .form-footer p {
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+}
+
+.devis .content form .form-footer a {
+    font-weight: 600;
+    margin-left: .5rem;
+    color: var(--main-color);
+
+}
+
+.devis .content form .form-footer a:hover {
+    color: #0000EE;
+    background-color: transparent;
+    text-decoration: underline;
+
+}
+
+.row {
+    display: flex;
+}
+
+.form-group {
+    margin: 10px 5px;
+    flex: 1;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .devis .content {
+        flex: 1 1 41rem;
+        padding: 0rem;
+        box-shadow: var(--box-shadow);
+    }
+    .heading h1 {
+        font-size: 4rem;
+        
+    }
+    
+    
+}
+
+.devis .content form .form-group textarea {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.devis .content form .form-group textarea:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+#map {
+    /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+}
+

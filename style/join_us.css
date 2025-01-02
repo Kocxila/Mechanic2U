@@ -1,0 +1,361 @@
+.heading {
+    background: url("../images/background.jpg");
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 7rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.required {
+    color: red;
+    padding-left: 2.2rem;
+    padding-bottom: 1rem;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    color: var(--black);
+}
+
+.register .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.register .content form {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 2rem;
+    max-width: 100%;
+    margin-right: 0rem;
+    position: relative;
+}
+
+.register .content form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: .8rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.register .content form span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.register .content form .form-group input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.register .content form .form-group input:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+.register .content form .form-group input:focus::placeholder {
+    color: var(--light-white);
+}
+
+.register .content form .form-group select {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.register .content form .form-group select:focus {
+    background: var(--black);
+    color: var(--white);
+}
+
+.register .content form .row .form-group #txt1 {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.register .content form .row .form-group #txt2 {
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.register .content form .row .form-group .error {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.register .content form .btn {
+    margin-top: 2rem;
+}
+
+.register .content .form-group #btn1,
+.register .content .form-group #btn2d {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+    background-color: var(--light-white);
+    margin-bottom: 2rem;
+}
+
+.register .content .form-group #btn1:hover {
+    background: var(--black);
+}
+
+.register .content .form-group #btn2 {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+    background-color: var(--light-white);
+    margin-bottom: 2rem;
+}
+
+.register .content .form-group #btn2:hover {
+    background: var(--black);
+}
+
+.register .content form .form-footer .register-btn {
+    margin-top: 1rem;
+    background: var(--black);
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.register .content form .form-footer .register-btn:hover {
+    background: var(--main-color);
+}
+
+.register .content form .form-footer p {
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+}
+
+.register .content form .form-footer a {
+    font-weight: 600;
+    margin-left: .5rem;
+    color: var(--main-color);
+
+}
+
+.register .content form .form-footer a:hover {
+    color: #0000EE;
+    background-color: transparent;
+    text-decoration: underline;
+
+}
+
+.row {
+    display: flex;
+}
+
+.form-group {
+    margin: 10px 5px;
+    flex: 1;
+}
+
+
+/*how to join*/
+.heading-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    color: var(--black);
+    border-bottom: 4px solid #cccccc;
+}
+
+.heading-title span {
+    color: #8e44ad;
+}
+
+.content {
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img {
+    height: 500px;
+    max-width: 100%;
+}
+
+.title {
+    font-size: 45px;
+}
+
+.text {
+    padding-top: 180px;
+    padding-left: 30px;
+    flex-basis: 50%;
+    /* so that both the image and text take  equal space on the row*/
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+@media (max-width:450px) {
+    .text {
+        padding-top: 180px;
+        padding-left: 30px;
+        flex-basis: 50%;
+        order: 1;
+        /* set the order to 1 to make text appear before images */
+    }
+
+    .img {
+        height: 500px;
+        max-width: 100%;
+        order: 2;
+        /* set the order to 2 to make images appear after text */
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .img {
+        height: auto;
+        max-width: 100%;
+        order: 2;
+        /* make the image appear after the text */
+    }
+
+    .text {
+        padding-top: 50px;
+        padding-left: 0;
+        flex-basis: 100%;
+        order: 1;
+        /* make the text appear before the image */
+    }
+    .heading h1 {
+        font-size: 4rem;
+        
+    }
+    .register .content .register-title{
+        font-size: 4rem;
+    }
+}
+
+/*review*/
+.reviews {
+    background: var(--light-bg);
+}
+
+
+
+.reviews .slide {
+    padding: 2rem;
+    border: var(--border);
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    user-select: none;
+    margin-bottom: 4rem;
+    display: inline;
+    height: 600px;
+
+}
+
+.reviews .slide .stars {
+    position: absolute;
+    bottom: 0;
+    left: 37%;
+    padding-bottom: 15px;
+}
+
+
+.reviews .slide .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.reviews .slide p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.reviews .slide h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .slide span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display: block;
+}
+
+.reviews .slide img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.reviews h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--black);
+}
+
+.reviews .swiper-pagination {
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.reviews .swiper-pagination-bullet-active {
+    background-color: var(--main-color) !important;
+}

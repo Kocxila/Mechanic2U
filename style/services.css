@@ -1,0 +1,127 @@
+.heading {
+    background: url("../images/background.jpg");
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 7rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+.services .intro-title {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 3rem;
+    margin: 5px 60px;
+}
+
+@media  (max-width: 768px) {
+    .services .box-container {
+      grid-template-columns: 1fr;
+      margin: 5px;
+    }
+    .services .box .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .heading h1 {
+      font-size: 5rem;
+      
+    }
+}
+
+
+.services .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: none;
+}
+
+.services .box-container .box:nth-child(1),
+.services .box-container .box:nth-child(2),
+.services .box-container .box:nth-child(3),
+.services .box-container .box:nth-child(4),
+.services .box-container .box:nth-child(5),
+.services .box-container .box:nth-child(6) {
+    display: inline-block;
+}
+
+
+.services .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.services .box-container .box .image {
+    height: 18rem;
+    overflow: hidden;
+}
+
+
+.services .box-container .box .image img {
+    margin: 3rem 10rem;
+    height: 15rem;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.services .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+    height: 350px;
+}
+
+.services .box-container .box .content .scroll-bg {
+    width: 90%;
+    margin: 10% auto;
+    border-radius: 50px;
+}
+
+.services .box-container .box .content .scroll-div {
+    width: 105%;
+    height: 100px;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.services .box-container .box .content .scroll-txt {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 1.5;
+    padding: 1rem 1rem;
+    text-align: left;
+    color: black;
+    margin-left: 5px; 
+}
+
+.services .box-container .box .content .scroll-txt li {
+    margin-left: 5px;
+}
+
+.services .box-container .box .content h3 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.services .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}

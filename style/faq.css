@@ -1,0 +1,87 @@
+.heading {
+    background: url("../images/apropos.png");
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 7rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+section .faq {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto 0;
+}
+
+.form-header h1 {
+    text-align: center;
+    color: var(--black);
+    font-size: 18px;
+}
+
+.form-header h1 span {
+    color: #8e44ad;
+}
+
+.faq .container {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+    margin: 20px 0;
+}
+
+.faq .container .question {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq .container .question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.faq .container .question.active::after {
+    transform: rotate(45deg);
+}
+
+.faq .container .answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.faq .container .answer {
+    padding: 0 20px 20px;
+    line-height: 2.75rem;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 790px) {
+    html {
+        font-size: 14px;
+    }
+
+    section .faq {
+        width: 80%;
+    }
+}
